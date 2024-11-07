@@ -1,0 +1,77 @@
+title:             "Comune GJD"
+description:       "Giovani a Fontanafredda - il futuro è questo"
+baseurl:           "/"
+email: "info@mail.comune.gjdev.it"
+
+# Header data
+header_parent_title: GJDEV
+header_parent_url: "https://gjdev.it"
+header_language_selector: false
+header_logo: https://gjd.altervista.org/wp-content/uploads/2024/09/cropped-Black_Beige_Circle_Y2K_Illustrative_Class_Logo-removebg-preview.png
+header_title: Gabriel Jones
+header_subtitle: Giovani a Fontanafredda - il futuro è questo
+search: true
+search_full_content: true
+mega_menu: true    # if true, require _data/menu.yml
+mega_menu_accedi: true
+
+# Social profiles
+social_block: false
+twitter_username:  GabrielJonesDev
+youtube_username: gabrieljonesyt
+github_username: gabrieljonesdev
+
+# Footer data
+footer_logo: https://gjd.altervista.org/wp-content/uploads/2024/09/cropped-Black_Beige_Circle_Y2K_Illustrative_Class_Logo-removebg-preview.png
+footer_title: Giovani a Fontanafredda
+footer_subtitle: Giovani a Fontanafredda - il futuro è questo
+email: gabriel.jones@gjdev.it
+# Home sections
+links_buttons: true
+links_buttons_title:
+posts_list: true
+posts_list_title: Ultimi Post
+section_lists: true
+section_lists_title: Dignissimos recusandae landing
+twitter_list: false
+twitter_list_title: Twitter@gabrieljonesdev
+links_leads: true
+links_leads_title: A est rerum leads
+
+# Build settings
+# permalink: /:categories/:title/
+markdown:          kramdown
+paginate:          5
+paginate_path:     "/posts/page:num/"#
+locale: "it-IT"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - searchyll
+
+defaults:
+# _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      toc: false
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _foo
+  - scope:
+      path: ""
+      type: foo
+    values:
+      layout: single
